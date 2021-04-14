@@ -1,0 +1,54 @@
+body {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+div.one {
+    background-color: aqua;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+}
+#home {
+    margin-left: 45%;
+    background: none;
+    border-color: rgb(0, 225, 255);
+    font-size: large;
+}
+
+div.two {
+    background-color: aqua;
+    padding: 3rem;
+    font-size: 4rem;
+    text-align: center;
+    font-style: italic;
+}
+
+div.three {
+    position: relative;
+}
+img {
+    height: 200px;
+    width: 300px;
+    margin-left: 20%;
+    position: relative;
+}
+
+.three #one {
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+}
+.three #two {
+    right: 14%;
+    bottom: 10%;
+}
+.three #three {
+    left: 10%;
+    bottom: -70%;
+}
+.three #four {
+    right: 14%;
+    bottom: -70%;
+}
