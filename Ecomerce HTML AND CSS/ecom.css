@@ -1,8 +1,5 @@
 body {
-    align-items: center;
-    justify-content: center;
     margin: 0;
-    min-height: 100vh;
 }
 
 div.one {
@@ -53,9 +50,4 @@ div.pro {
      border-radius: 20%;
      background-color: aqua;
  }
- /*
- #btn {
-     position:absolute;
-     bottom: 1%;
-     left: 5%;
- }*/
+ 
