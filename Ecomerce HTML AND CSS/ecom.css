@@ -25,30 +25,37 @@ div.two {
     font-style: italic;
 }
 
-div.three {
-    position: relative;
-}
+
 img {
-    height: 200px;
-    width: 300px;
-    margin-left: 20%;
-    position: relative;
+    border-radius: 10%;
+    height: 70%;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+    
 }
 
-.three #one {
+div.three {
+    display: flex;
+    flex-flow:wrap
+}
+div.pro {
     position: relative;
-    left: 10%;
-    bottom: 10%;
+    width: 50%;
 }
-.three #two {
-    right: 14%;
-    bottom: 10%;
-}
-.three #three {
-    left: 10%;
-    bottom: -70%;
-}
-.three #four {
-    right: 14%;
-    bottom: -70%;
-}
+
+ .down span {
+     margin-left: 15%;
+     font-size: 120%;
+ }
+ .down button{
+     position:absolute;
+     margin-left: 35%;
+     border-radius: 20%;
+     background-color: aqua;
+ }
+ /*
+ #btn {
+     position:absolute;
+     bottom: 1%;
+     left: 5%;
+ }*/
