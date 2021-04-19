@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box; /* it will create all div with equal sizes */
 }
-body {background: radial-gradient(rgb(255, 255, 255),rgb(91, 241, 247));}
+body {
+    background-color: aqua;
+}
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 2%;
 }
 
 .logo img {
     width: 100px;
+    filter: brightness(40%);
 }
 
 nav{
@@ -39,7 +42,7 @@ p {
     margin: auto; /* auto will center the container*/
     padding-left: 25px;
     padding-right: 25px;
-    background: radial-gradient(white,rgb(255, 101, 101));
+    background: radial-gradient(white,rgb(61, 255, 255)); /* can add multiple colors (center, to end)*/
 }
 
 .row {
@@ -54,34 +57,32 @@ p {
     margin-bottom: 20px;
 }
 .col1 img {
-    width: 250px;
+    width: 60%;
 }
 .btn {
     display: inline-block; /*by this only creates a margin-top*/
-    background-color: rgb(0, 238, 255);
+    background-color: rgb(122, 122, 0);
     margin-top: 5%;
     padding: 2%;
     border-radius: 20%;
     transition: 0.5s;
-}
-.btn:hover {
-    background-color: rgb(0, 170, 170);
     color: beige;
 }
-
-.top {
-    background: radial-gradient(white,rgb(255, 251, 0)); /* can add multiple colors (center, to end)*/
+.btn:hover {
+    background-color: rgb(255, 251, 0);
+    color: black;
 }
 
 .col3 {
-    flex-basis: 15%; /*it will sets the initial main size of a flex item*/
+    flex-basis: 30%; /*it will sets the initial main size of a flex item*/
     margin:auto;
+    padding: 2%;
     text-align: center;
     color:rgb(101, 104, 104);
     font-style:italic;
 }
 .col3 img {
-    width: 100%;
+    width: 60%;
     border-radius: 10%;
 }
 
@@ -94,13 +95,14 @@ p {
 
 .col4 {
     flex-basis: 25%; /*divide the div of display flex in four equal parts*/
-    padding: 10px;
-    margin: auto;
+    cursor: pointer;
     transition: 500ms;
+    margin: 3%;
+    margin-bottom: 3%;
 }
 
 .col4 img {
-    width: 200px;
+    width: 100%;
     border-radius: 10%;
 }
 
@@ -125,18 +127,20 @@ p {
 /* testimonials */
 
 .testimonial {
-    padding: 30px ;
+    padding: 5%;
+    margin-bottom: 10%;
 }
 .testimonial .col3 {
+    margin: 0% 5%;
     box-shadow: 5px 5px 5px 5px;
-    padding: 30px 15px;
     cursor: pointer;
     transition: 500ms;
 }
 .testimonial p {
-    padding-bottom: 20px;
+    padding-bottom: 20%;
 }
 .testimonial img {
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -145,4 +149,97 @@ p {
 }
 .testimonial .col3 i {
     color: rgb(221, 221, 0);
+}
+
+/* brand logo */
+
+.brand {
+    margin: auto;
+}
+
+.col5 {
+    margin: auto;
+}
+.col5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col5 img:hover {
+    filter: grayscale(0%);
+}
+
+/* footer */
+.footer{
+    color: white;
+    background-color: black;
+}
+.footer .container {
+    background: none;
+}
+.footer h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.fo-col1, .fo-col2, .fo-col3, .fo-col4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.fo-col1 img {
+    width: 30px;
+    cursor: pointer;
+}
+.fo-col2 img {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* menu adding in css*/
+
+.menu {
+    width: 20px;
+    margin-left: 10px;
+    display: none;
+}
+
+/* performing media query on the items when screen size is less then 700px*/
+
+@media only screen and (max-width: 700px) { /*only on less then 700px*/
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    .first {display: none;}
+    .second {
+        display: block;
+        position: absolute;
+        top:12%;
+        right: 0%;
+        padding-left: 90%;
+        padding-right: 3%;
+    }
+
+    .second ul {
+        background-color: black;
+        border-radius: 5%;
+    }
+    .second ul li a{
+        color: white;
+    }
+}
+
+/* media perform when screen is less then 500*/
+
+@media only screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col1, .col2, .col3, .col4 {
+        width: 100%;
+        margin: auto;
+    }
 }
