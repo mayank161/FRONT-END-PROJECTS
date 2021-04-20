@@ -6,3 +6,15 @@ menu.addEventListener('click',()=> {
     bar.classList.toggle('second');
 })
 
+// single product page functionality
+
+// img zoom in
+
+const big = document.getElementById('bigImg');
+const small = document.getElementById('smallImg');
+
+small.onclick = (e) =>{
+  if(e.target.classList.contains('small-img')) {
+      big.src= e.target.src;
+  }
+}

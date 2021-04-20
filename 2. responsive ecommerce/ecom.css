@@ -154,7 +154,7 @@ p {
 /* brand logo */
 
 .brand {
-    margin: auto;
+    margin: 5% 10%;
 }
 
 .col5 {
@@ -204,6 +204,57 @@ p {
     display: none;
 }
 
+/* All products page*/
+.row2 {
+    justify-content: space-between;
+    margin: auto 5%;
+}
+.row2 select{
+    padding: 0.3%;
+    cursor: pointer;
+}
+.row2 select:hover {
+    padding: 0.5%;
+    border: solid rgb(216, 184, 2);
+}
+.row2 select:focus {
+    outline: none;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+}
+.page a{
+    font-size: 120%;
+    color: black;
+    transition: 0.5s;
+}
+
+.page .first:hover, .second:hover {
+    font-size: 150%;
+    color: yellow;
+}
+
+/* single product detail page*/
+
+.small-images {
+    display: flex;
+    margin: 5%;
+}
+
+.small-col {
+    flex-basis: 25%;
+}
+.small-img:hover {
+    padding: 1%;
+    border: solid black;
+}
+
+
+
+
+/* using media*/
 /* performing media query on the items when screen size is less then 700px*/
 
 @media only screen and (max-width: 700px) { /*only on less then 700px*/
@@ -240,6 +291,6 @@ p {
 
     .col1, .col2, .col3, .col4 {
         width: 100%;
-        margin: auto;
+        margin: 5% 0%;
     }
 }
