@@ -251,8 +251,30 @@ p {
     border: solid black;
 }
 
+/*----- cart items --------*/
+table {
+    width: 100%;
+    padding: 0% 10%;
+    margin-top: 3%;
+}
+th {
+    background-color: orange;
+    border: solid black;
+}
+td {
+    text-align: center;
+    padding: 1% 0%;
+    border-bottom: solid black;
+}
 
 
+.cancel {
+    padding: 2%;
+    border-radius: 10%;
+    border: solid rgb(206, 0, 0);
+    background-color: rgb(255, 123, 123);
+    font-weight: bolder;
+}
 
 /* using media*/
 /* performing media query on the items when screen size is less then 700px*/
