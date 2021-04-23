@@ -12,7 +12,6 @@ menu.addEventListener('click',()=> {
 
 const big = document.getElementById('bigImg');
 const small = document.getElementById('smallImg');
-console.log(small);
 if(small) {
     small.onclick = (e) =>{
         if(e.target.classList.contains('small-img')) {
@@ -34,14 +33,11 @@ if(add) {
     
         for(let j=0; j<localStorage.length; j++) {
             if(img === JSON.parse(localStorage.getItem(localStorage.key(j)))[0]) {
-                console.log('same item');
                 //localStorage.setItem(`${j}`,JSON.stringify(i));
                 return;
             }
         }
         
-        
-        console.log('the element',e.target.parentElement.parentElement.children[0].children[0],img.outerHTML);
         localStorage.setItem(`${idx}`,JSON.stringify(i));
         idx += 1;
     })  
@@ -64,12 +60,9 @@ if(localStorage.length) {
              td.style.width = '20%';
              let p = localStorage.getItem(localStorage.key(i));
              let j = JSON.parse(p);
-             console.log('no',j)
              if(j) {
                 for(let k=0; k<j.length; k++) {
-                    console.log('yes',j[k]);
                     td.innerHTML = j[k];
-                    console.log(td.value)
                     if(td.innerText === "undefined") { break; }
                     tr.append(td.cloneNode(true));
                 }
@@ -89,8 +82,7 @@ let cancel = document.getElementsByClassName('cancel');
 if(cancel) {
     for(let i=0; i<cancel.length; i++) {
         cancel[i].addEventListener('click', (e) => {
-            let ts = e
-            console.log(e.target.parentElement.parentElement.remove())
+            e.target.parentElement.parentElement.remove()
             localStorage.removeItem(i);
         })
     }
